@@ -9,7 +9,7 @@ const Header = ({ text, color }) => {
           : color === "black"
           ? "text-citrus-black"
           : ""
-      } text-2xl md:text-5xl flex items-center font-archivo font-black gap-3 underline`}
+      } my-4 text-2xl md:text-5xl flex items-center font-archivo font-black gap-3 underline`}
     >
       <PiTagSimpleFill />
       {text}

@@ -46,6 +46,8 @@ export const ATTRIBUTES = {
     "email",
     "roles",
     "discord",
+    "country",
+    "mlh",
   ],
   sponsors: [
     "name",

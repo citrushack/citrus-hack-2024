@@ -8,14 +8,14 @@ import Corners from "../../Corners";
 const About = () => {
   return (
     <div className="w-full relative">
-      <Image src={rayas} />
+      <Image src={rayas} alt="rayas" className="w-full" />
       {/* <Image
         src={car}
         className="w-full sm:w-1/2 absolute bottom-0 lg:-bottom-16 md:right-[20%] z-10"
       /> */}
       <div className="w-full bg-citrus-black text-citrus-black py-10 flex items-center justify-center">
         <div className="w-11/12 rounded-[100px] bg-citrus-beige justify-between flex flex-col md:flex-row gap-8 px-8 py-12 pb-24 lg:pb-48">
-          <Image src={title} />
+          <Image src={title} alt="title" />
           <div className="flex flex-col items-start gap-3">
             <div className="flex items-center justify-center text-xl lg:text-4xl gap-2 font-bold underline">
               <PiTagSimpleFill />

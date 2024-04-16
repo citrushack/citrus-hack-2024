@@ -25,13 +25,21 @@ const Questions = ({
     setLoading(true);
 
     if (
-      Object.entries(fields).some(
-        ([key, value]) =>
+      Object.entries(fields).some(([key, value]) => {
+        if (
           value.required &&
           (!object[key] ||
             object[key] === "" ||
             object[key].includes("Invalid"))
-      )
+        )
+          console.log(key);
+        return (
+          value.required &&
+          (!object[key] ||
+            object[key] === "" ||
+            object[key].includes("Invalid"))
+        );
+      })
     ) {
       toaster("Please complete all required fields!", "error");
       setLoading(false);

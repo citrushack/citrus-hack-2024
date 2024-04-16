@@ -1,5 +1,6 @@
 import {
   AGES,
+  COUNTRIES,
   DIETS,
   GENDERS,
   GRADES,
@@ -64,9 +65,17 @@ const User = ({ user, setUser, edit, setEdit }) => {
           editable={edit}
         />
         <Select
-          title="Grade"
+          title="Level of Study"
           items={GRADES}
           field="grade"
+          user={user}
+          setUser={setUser}
+          editable={edit}
+        />
+        <Select
+          title="Country of Residence"
+          items={COUNTRIES}
+          field="country"
           user={user}
           setUser={setUser}
           editable={edit}
