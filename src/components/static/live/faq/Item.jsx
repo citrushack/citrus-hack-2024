@@ -7,7 +7,7 @@ const Item = ({ question, answer, index, selected, setSelected }) => {
         className=" text-citrus-beige w-full"
         onClick={() => setSelected(index === selected ? null : index)}
       >
-        <div className="flex justify-between items-center w-full font-black mt-3 cursor-pointer">
+        <div className="flex justify-between items-center w-full font-black mt-3 cursor-pointer py-2">
           {question}
           <FaCaretDown
             className={`${
@@ -17,11 +17,11 @@ const Item = ({ question, answer, index, selected, setSelected }) => {
         </div>
       </div>
       <div
-        className={`border-none py-4 overflow-hidden transition-[min-height,max-height] ${
-          selected === index ? "min-h-20 max-h-64" : "min-h-0 max-h-0"
+        className={`border-none overflow-hidden transition-[max-height] ${
+          selected === index ? "max-h-500" : "max-h-0"
         } duration-300 `}
       >
-        <div className={`border-none py-4 `}>{answer}</div>
+        <div className={`brder-none py-4`}>{answer}</div>
       </div>
     </div>
   );

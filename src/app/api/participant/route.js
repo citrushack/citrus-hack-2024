@@ -14,8 +14,18 @@ export async function POST(req) {
       { status: auth }
     );
   }
-  const { phone, major, age, school, grade, gender, shirt, diet } =
-    await req.json();
+  const {
+    mlh,
+    country,
+    phone,
+    major,
+    age,
+    school,
+    grade,
+    gender,
+    shirt,
+    diet,
+  } = await req.json();
 
   try {
     await updateDoc(doc(db, "users", user.id), {
@@ -27,6 +37,8 @@ export async function POST(req) {
       gender: gender,
       shirt: shirt,
       diet: diet,
+      country: country,
+      mlh: mlh,
     });
     return res.json({ message: "OK" }, { status: 200 });
   } catch (err) {
