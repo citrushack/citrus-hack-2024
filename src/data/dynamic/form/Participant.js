@@ -1,4 +1,4 @@
-import { AGES, DIETS, MAJORS } from "./Information";
+import { AGES, COUNTRIES, DIETS, MAJORS } from "./Information";
 import { GRADES } from "./Information";
 import { GENDERS } from "./Information";
 import { SHIRTS } from "./Information";
@@ -15,14 +15,24 @@ export const FIELDS = {
       "Participants are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
     ],
   },
-  name: {
+  firstName: {
     input: "input",
-    name: "name",
+    name: "firstName",
     type: "text",
-    title: "Name",
+    title: "First Name",
     maxLength: 50,
     width: 12,
-    editable: false,
+    editable: true,
+    required: true,
+  },
+  lastName: {
+    input: "input",
+    name: "lastName",
+    type: "text",
+    title: "Last Name",
+    maxLength: 50,
+    width: 12,
+    editable: true,
     required: true,
   },
   email: {
@@ -88,7 +98,7 @@ export const FIELDS = {
   },
   grade: {
     input: "select",
-    title: "Grade",
+    title: "Level of Study",
     options: GRADES,
     field: "grade",
     placeholder: "ie. Undergraduate",
@@ -111,6 +121,16 @@ export const FIELDS = {
     field: "shirt",
     width: 12,
     required: true,
+  },
+  country: {
+    input: "select",
+    title: "Country of Residence",
+    options: COUNTRIES,
+    field: "country",
+    placeholder: "United States",
+    width: 12,
+    required: true,
+    searchable: true,
   },
   diet: {
     input: "checkboxes",
@@ -145,19 +165,32 @@ export const FIELDS = {
       "I understand this is an in person event taking place in UCR and I must attend in person in order to participate",
     ],
   },
+  mlh: {
+    text: "",
+    input: "checkboxes",
+    width: 12,
+    field: "mlh",
+    required: false,
+    options: [
+      "I authorize MLH to send me occasional emails about relevant events, career opportunities, and community announcements.",
+    ],
+  },
 };
 
 export const ATTRIBUTES = {
-  name: "",
+  firstName: "",
+  lastName: "",
   email: "",
   phone: "",
   major: "",
   age: "",
   school: "",
+  country: "",
   grade: "",
   gender: "",
   shirt: "",
   diet: [],
   resume: "",
   requirements: [],
+  mlh: [],
 };

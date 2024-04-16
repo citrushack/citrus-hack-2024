@@ -6,7 +6,7 @@ const Involved = () => {
   return (
     <div className="bg-citrus-black w-full flex flex-col items-center py-8">
       <Header text="Get Involved" color="white" />
-      <div className="flex flex-wrap items-center justify-evenly w-11/12 lg:w-10/12 text-white my-10">
+      <div className="flex flex-wrap items-center justify-evenly w-11/12 lg:w-10/12 xl:w-8/12 2xl:w-7/12 text-white my-10">
         {Object.entries(INVOLVED).map(([key, value], index) => (
           <div key={index} className="flex w-full lg:w-5/12 p-5">
             <div className="flex flex-col items-center justify-center mr-8">

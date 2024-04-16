@@ -8,7 +8,11 @@ import mlh from "../../public/mlh-banner.svg";
 const Home = () => {
   return (
     <div className="w-full relative">
-      <Image src={mlh} className="fixed top-0 right-5 z-50 w-24" alt="mlh" />
+      <Image
+        src={mlh}
+        className="fixed top-0 right-5 z-50 w-12 md:w-24"
+        alt="mlh"
+      />
       <Release release={RELEASES.STATIC.LIVE}>
         <Live />
       </Release>
