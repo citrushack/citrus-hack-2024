@@ -1,8 +1,8 @@
 export const QUESTIONS = [
   {
-    question: "When does Cutie Hack start?",
+    question: "When does Citrus Hack start?",
     answer:
-      "Cutehack 2023 opening ceremony will be at 7AM on Saturday November 18th, 2023! Hacking will begin at 8AM.",
+      "Cutehack 2024 opening ceremony will be at 8PM on Friday May 17th, 2024! Hacking will begin at 8:30PM.",
   },
   {
     question: "What is a hackathon?",
@@ -10,9 +10,9 @@ export const QUESTIONS = [
       "Hackathons are a great opportunity for students to network with students and mentors, develop new projects, learn new skills, and solve problems. You are not required to submit a project, you can come out for the free merch, workshops and networking opportunities.",
   },
   {
-    question: "Is Cutie Hack free?",
+    question: "Is Citrus Hack free?",
     answer:
-      "Cutiehack 2023 is completely free of cost! You only need to bring a laptop, chargers, and the rest will be provided!",
+      "Citrushack 2024 is completely free of cost! You only need to bring a laptop, chargers, and the rest will be provided!",
   },
   {
     question: "How long do I have to hack?",
@@ -20,7 +20,7 @@ export const QUESTIONS = [
       "You can hack all 12 hours or just 30 minutes! You are not required to spend the entire time hacking, we encourage participants to visit the various events and workshops that will be hosted throughout the event!",
   },
   {
-    question: "Who can come to Cutie Hack?",
+    question: "Who can come to Citrus Hack?",
     answer:
       "Any student from any major! This event is open to all majors regardless of prior hacking experience!",
   },
@@ -32,7 +32,7 @@ export const QUESTIONS = [
   {
     question: "What if I've never been to a hackathon before?",
     answer:
-      "That is completely okay! We do not expect participants to be experts! Cutiehack is a beginner oriented hackathon for you to explore what hackathons can provide.",
+      "That is completely okay! We do not expect participants to be experts! Citrushack is a beginner oriented hackathon for you to explore what hackathons can provide.",
   },
   {
     question: "What if I don't have a team?",

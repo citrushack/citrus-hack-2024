@@ -25,21 +25,15 @@ const Questions = ({
     setLoading(true);
 
     if (
-      Object.entries(fields).some(([key, value]) => {
-        if (
+      Object.entries(fields).some(
+        ([key, value]) =>
           value.required &&
           (!object[key] ||
             object[key] === "" ||
-            object[key].includes("Invalid"))
-        )
-          console.log(key);
-        return (
-          value.required &&
-          (!object[key] ||
-            object[key] === "" ||
-            object[key].includes("Invalid"))
-        );
-      })
+            object[key].includes("Invalid") ||
+            (value.input === "checkboxes" &&
+              object[key].length !== value.options.length))
+      )
     ) {
       toaster("Please complete all required fields!", "error");
       setLoading(false);
@@ -189,6 +183,22 @@ const Questions = ({
         className="no-underline flex items-center text-citrus-orange"
       >
         MLH Code of Conduct
+        <FaLink className="mx-2" />
+      </Link>
+      <Link
+        href="https://mlh.io/privacy"
+        target="_blank"
+        className="no-underline flex items-center text-citrus-orange"
+      >
+        MLH Privacy Policy
+        <FaLink className="mx-2" />
+      </Link>
+      <Link
+        href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
+        target="_blank"
+        className="no-underline flex items-center text-citrus-orange"
+      >
+        MLH Contest Terms and Conditions
         <FaLink className="mx-2" />
       </Link>
       {packet && (
