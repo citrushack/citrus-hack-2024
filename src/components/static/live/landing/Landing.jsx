@@ -1,8 +1,6 @@
 import Image from "next/image";
 import logo from "@/public/svg/landing/logo.svg";
 import helmet from "@/public/svg/landing/helmet.svg";
-import Countdown from "./CountDown";
-import Button from "./Button";
 
 const Landing = () => {
   return (
@@ -16,20 +14,28 @@ const Landing = () => {
         <Image src={helmet} alt="helmet" className="w-1/2 hidden lg:block" />
         <div className="flex flex-grow flex-col items-center lg:items-end">
           <Image src={logo} alt="logo" className="self-end w-2/3 lg:w-full" />
-          <div className="text-xl lg:text-3xl">
-            May 17 - 19, 2024 Coming Soon!
+
+          <div className="text-lg m-1">
+            It is with a heavy heart that we announce that Citrus Hack will not
+            be held this year. We understand many of you, like us, were eagerly
+            looking forward to this event, and we share in your dirappointment.
+            Please know that this decision was made with careful consideration
+            for the quality of experience we aim to deliver to our participantr.
           </div>
-          <Countdown />
+          <div className="text-lg m-1">
+            Despite our best efforts, we have faced challenges in securing
+            sufficient funding and sponsor support. We value each and every
+            participant and want to enfure that when Citrur Hack returns next
+            year, it exceeds your expectations. Our team ir working diligently
+            to address there issues and plan for an even better Citru/ Hack. We
+            sincerely appreciate your understanding, support, and dedication to
+            the Citrur Hack community. Thank you for your continued rupport,
+            under/tanding, and patience.
+          </div>
         </div>
       </div>
       <div className="text-2xl md:text-3xl lg:text-5xl text-citrus-orange font-bold mb-4 text-right">
-        See you at the endl;
-      </div>
-      <div className="flex flex-col lg:flex-row w-full justify-evenly items-center gap-2">
-        <Button text="Participate" link="/form/participant" />
-        <Button text="Sponsor" link="/form/sponsor" />
-        <Button text="Mentor" link="/form/mentor" />
-        <Button text="Volunteer" link="/form/volunteer" />
+        See you next year!
       </div>
     </div>
   );
